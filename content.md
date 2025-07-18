@@ -1,5 +1,7 @@
 # Terminal Basics
 
+The terminal gives you powerful control over your computer. Whether you're installing software, running programs, or managing files, learning the terminal helps you move faster and work like a developer.
+
 ## Goal
 
 By the end of this lesson, you’ll be able to open a terminal, move between folders, list files, and use handy shortcuts to work faster. Try each step in your own terminal as you go.
