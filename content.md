@@ -8,7 +8,7 @@ By the end of this lesson, you’ll be able to open a terminal, move between fol
 
 You can use the terminal in your codespace or on your computer.
 
-- Mac: Press Cmd + Space, type Terminal, hit Enter.
+- Mac: Press ⌘ + Space, type Terminal, hit Enter.
 - Windows: Press Win + R, type cmd or powershell, hit Enter.
 - Linux: Press Ctrl + Alt + T or find "Terminal" in your applications menu.
 
@@ -120,8 +120,9 @@ These shortcuts will save you time as you use the terminal more:
 | ↓ (Down Arrow) | Scroll forward through command history   |
 | Ctrl + C       | Cancel the current command               |
 | Tab            | Autocomplete a file or folder name       |
-| Cmd + K        | Clear the terminal screen (like clear)   |
+| ⌘ + K          | Clear the terminal screen (like clear)   |
 | !!             | Re-run the last command                  |
+| touch          | Create (or update timestamp) of a file   |
 
 <aside class="tip">
   Try pressing <code>Up Arrow</code> a few times to see your command history. Then press `Enter` to run one again. 
@@ -140,7 +141,7 @@ Try This:
 - Inside it, create another folder called `subfolder`.
 - Navigate into subfolder and use `pwd` to verify your path.
 - Try using the `Up Arrow` to repeat the `mkdir` and `cd` commands.
-- Use `Cmd + K` to clear your screen.
+- Use `⌘ + K` to clear your screen.
 
 ## Wrap-Up
 
