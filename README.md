@@ -1,1 +1,1 @@
-# lesson-template
+# terminal-basics
