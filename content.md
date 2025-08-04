@@ -1,17 +1,16 @@
-# Learn the Terminal: Navigate Your Computer Like a Developer
+# Terminal Basics: Navigate Your Computer Like a Developer
 
 The terminal gives you powerful control over your computer. Whether you're installing software, running programs, or managing files, learning the terminal helps you move faster and work like a developer.
 
 ## Goal
 
-Goal
 By the end of this lesson, you'll be able to open a terminal, move between folders, view files, create directories, and use keyboard shortcuts to work faster. You'll create and navigate a practice workspace on your computer using the terminal, no mouse needed.
 
 ## 1. Open the Terminal
 
 Choose one:
 
-- Codespace: Create a repo using the [static html template](https://github.com/dpi-tta-projects/static-html-template).
+- Codespace: Create a repo using the [static html template](https://github.com/dpi-tta-projects/static-html-template) and use the integrated terminal.
 - Mac: Press ⌘ + Space, type `Terminal`, hit Enter.
 - Windows: Press Win + R, type `cmd` or `powershell`, hit Enter.
 - Linux: Press Ctrl + Alt + T or find "Terminal" in your applications menu.
@@ -24,17 +23,7 @@ Use `pwd` to print your current working directory.
 pwd
 ```
 
-### Expected Output (Mac/Linux)
-
-```bash
-/Users/yourname
-```
-
-### Expected Output (Windows PowerShell)
-
-```powershell
-C:\Users\yourname
-```
+<video title="terminal pwd command" src="assets/vscode-terminal-pwd.mp4" autoplay loop muted playsinline></video>
 
 <aside class="why">
   <strong>Why this works:</strong> <code>pwd</code> stands for "print working directory". It tells you where you are in the file system.
@@ -48,35 +37,31 @@ Use `ls` to see what's in your current folder.
 ls
 ```
 
-Expected Output:
-
-```nginx
-Desktop  Documents  Downloads  Music  Pictures
-```
+<video title="ls" src="assets/vscode-terminal-ls.mp4" autoplay loop muted playsinline></video>
 
 ### Extras
 
 - `ls -l`: Show detailed info like size, owner, and permissions.
-- `ls -a`: Show all files, including hidden ones like .git.
+- `ls -a`: Show all files, including hidden ones like `.git`.
 
 ## 4. Move Into a Folder
 
-To go into a folder use `cd`. For example:
+<video title="cd" src="assets/vscode-terminal-cd.mp4" autoplay loop muted playsinline></video>
+
+Use the `ls` command to list all files and folders in the working directory. To go into a folder use `cd <folder name>`. For example:
 
 ```bash
 cd Documents
 ```
 
+<aside class="tip">
+  Use <code>tab</code> key to autocomplete file and folder names in the current directory.
+</aside>
+
 Then use `pwd` again to confirm where you are.
 
 ```bash
 pwd
-```
-
-Expected Output:
-
-```bash
-/Users/yourname/Documents
 ```
 
 ## 5. Go Up One Folder
@@ -94,6 +79,8 @@ pwd
 ```
 
 ## 6. Make a Folder
+
+<video src="assets/vscode-terminal-mkdir.mp4" title="mkdir" autoplay loop muted playsinline></video>
 
 Create a new folder with `mkdir`:
 
@@ -113,9 +100,15 @@ Go Into the New Folder
 cd my-first-folder
 ```
 
-You're now inside your new folder!
+You're now inside your new folder.
+
+<aside class="tip">
+  Use the <code>rm</code> command to delete files. For folders, use <code>rm -rf</code>. This deletes the folder and any files contained within it.
+</aside>
 
 ## 7. Create a File
+
+<video autoplay loop muted playsinline src="assets/vscode-terminal-touch.mp4" title="touch"></video>
 
 To create an empty file:
 
@@ -135,6 +128,8 @@ ls
 
 ## 8. View and Change Permissions
 
+<video autoplay loop muted playsinline src="assets/vscode-terminal-chmod.mp4" title="chmod"></video>
+
 Let's see the file's permissions:
 
 ```bash
@@ -147,13 +142,11 @@ To make it executable (example):
 chmod +x hello.txt
 ```
 
-<aside class="tip">
-  <strong>Tip:</strong> Use this for shell scripts later on! For now, just try it out.
-</aside>
+This allows us to create and execute files. We'll use this for shell scripts later on. For now, just try it out.
 
-## 9. View Help for Any Command
+## 9. Read Documentation for Any Command
 
-<!-- TODO: screenshot -->
+<video autoplay loop muted playsinline src="assets/vscode-terminal-man.mp4" title="man"></video>
 
 You can read built-in help docs for any command. To see the 'manual' for `ls` type:
 
@@ -164,8 +157,6 @@ man ls
 To exit the manual, press `q`.
 
 ## 10. Clear the Terminal
-
-<!-- TODO: screenshot video -->
 
 To clean up your screen:
 
@@ -178,24 +169,6 @@ Or on Mac:
 ```bash
 ⌘ + K
 ```
-
-<!-- 
-
-## 11. Exiting vi or a Stuck Command
-
-
-
-If you accidentally open a file in `vi`, here's how to escape:
-
-- Press Esc
-- Type `:q!`
-- Hit Enter
-
-<aside class="warning">
-  <code>vi</code> is a powerful editor, but can be confusing at first. Don't worry, you'll learn it later.
-</aside> 
-
--->
 
 <!-- TODO
 
@@ -217,12 +190,10 @@ These shortcuts will save you time as you use the terminal more:
 | ⌘ + K          | Clear the terminal screen (like clear)   |
 | !!             | Re-run the last command                  |
 
-
 <!-- TODO: add demo video -->
 <aside class="tip">
   Try pressing <code>Up Arrow</code> a few times to see your command history. Then press `Enter` to run one again.
 </aside>
-
 
 <!-- TODO: add demo video -->
 <aside class="warning">
